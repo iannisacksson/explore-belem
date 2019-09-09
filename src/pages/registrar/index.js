@@ -22,7 +22,7 @@ const Register = () => (
     </View>
 
     <KeyboardAvoidingView behavior="padding" style={styles.containerBody}>
-      <Text style={styles.title}>Entre</Text>
+      <Text style={styles.title}>Crie sua conta</Text>
 
       <TextInput
         autoCapitalize="none"
@@ -53,7 +53,7 @@ const Register = () => (
       <View>
         <View style={styles.containerButton}>
           <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}>Register</Text>
+            <Text style={styles.buttonText}>Registrar</Text>
           </TouchableOpacity>
         </View>
       </View>
