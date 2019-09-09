@@ -10,4 +10,6 @@ export default {
   screenHeight: width < height ? height : width,
 
   basePaddingButton: 10,
+  baseHeight: 124,
+  baseRadiusLogo: 100,
 };

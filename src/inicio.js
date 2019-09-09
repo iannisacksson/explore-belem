@@ -1,13 +1,10 @@
 import React from 'react';
 
-import {
-  View, Text, TouchableOpacity, Image,
-} from 'react-native';
+import { View, Text, TouchableOpacity, Image } from 'react-native';
 
 import Logo from './assets/ararararaCOLOR-1.png';
 
-import { Colors } from './styles';
-import styles from './styles.js';
+import styles, { Colors } from './styles';
 
 const Inicio = () => (
   <View style={styles.container}>
