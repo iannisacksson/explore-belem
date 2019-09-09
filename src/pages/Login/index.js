@@ -1,24 +1,27 @@
 import React from 'react';
 
-import { View, Text, Image, TextInput, KeyboardAvoidingView, TouchableOpacity } from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  TextInput,
+  KeyboardAvoidingView,
+  TouchableOpacity,
+} from 'react-native';
 
 import styles from './styles';
 
 import Logo from '../../assets/ararararaCOLOR-1.png';
 
-import { colors } from '../../styles/index'
+import { colors } from '../../styles/index';
 
-const Login = () =>(
+const Login = () => (
   <View style={styles.container}>
-
     <View style={styles.containerLogo}>
       <Image style={styles.logo} source={Logo} />
     </View>
 
-    <KeyboardAvoidingView
-      behavior="padding"
-      style={styles.containerBody}
-    >
+    <KeyboardAvoidingView behavior="padding" style={styles.containerBody}>
       <Text style={styles.title}>Entre</Text>
 
       <TextInput
@@ -39,12 +42,11 @@ const Login = () =>(
       />
 
       <View>
-
-      <View style={styles.containerButton}>
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Entrar</Text>
-        </TouchableOpacity>
-      </View>
+        <View style={styles.containerButton}>
+          <TouchableOpacity style={styles.button}>
+            <Text style={styles.buttonText}>Entrar</Text>
+          </TouchableOpacity>
+        </View>
 
         <Text style={styles.forgot}>Esqueceu sua senha?</Text>
 
@@ -53,10 +55,8 @@ const Login = () =>(
           <Text style={styles.linkRegister}> Registre-se</Text>
         </View>
       </View>
-
-
     </KeyboardAvoidingView>
   </View>
-)
+);
 
 export default Login;
