@@ -6,11 +6,14 @@ import Logo from './assets/ararararaCOLOR-1.png';
 
 import styles, { Colors } from './styles';
 
-const Inicio = () => (
+const Inicio = ({ navigation }) => (
   <View style={styles.container}>
     <Image style={styles.logo} source={Logo} />
 
-    <TouchableOpacity style={styles.button}>
+    <TouchableOpacity
+      style={styles.button}
+      onPress={() => navigation.navigate('login')}
+    >
       <Text style={styles.buttonText}>Entrar</Text>
     </TouchableOpacity>
     <TouchableOpacity style={styles.button}>
