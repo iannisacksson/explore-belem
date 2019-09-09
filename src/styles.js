@@ -5,12 +5,24 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: colors.primary,
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     alignItems: 'center',
   },
 
+  containerLogo: {
+    flex: 1,
+    justifyContent: 'flex-end',
+  },
+
   logo: {
-    margin: metrics.baseMargin,
+    height: 97,
+    width: 100,
+    marginBottom: 50,
+  },
+
+  containerButtons: {
+    flex: 1,
+    marginTop: 33,
   },
 
   button: {
@@ -19,11 +31,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: metrics.basePaddingButton,
     borderRadius: metrics.baseRadius,
-    marginVertical: metrics.baseMargin,
+    marginTop: 17,
   },
 
   buttonText: {
     color: colors.white,
+    fontSize: 20,
   },
 });
 
