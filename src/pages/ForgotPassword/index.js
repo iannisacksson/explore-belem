@@ -9,19 +9,18 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import styles from './styles';
-
 import Logo from '../../assets/ararararaCOLOR-1.png';
 
-import { colors } from '../../styles/index';
+import styles from './styles';
+import { colors } from '../../styles';
 
-const Forgot = () => (
+const ForgotPassword = () => (
   <View style={styles.container}>
     <View style={styles.containerLogo}>
       <Image style={styles.logo} source={Logo} />
     </View>
 
-    <KeyboardAvoidingView behavior="padding" style={styles.containerBody}>
+    <KeyboardAvoidingView behavior="height" style={styles.containerBody}>
       <Text style={styles.title}>
         Insira seu E-mail e enviaremos um link para renovar sua senha
       </Text>
@@ -34,15 +33,13 @@ const Forgot = () => (
         style={styles.input}
       />
 
-      <View>
-        <View style={styles.containerButton}>
-          <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}>Enviar</Text>
-          </TouchableOpacity>
-        </View>
+      <View style={styles.containerButton}>
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>Enviar</Text>
+        </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>
   </View>
 );
 
-export default Forgot;
+export default ForgotPassword;

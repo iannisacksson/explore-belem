@@ -1,14 +1,17 @@
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import Welcome from './pages/Welcome';
-import login from './pages/Login';
-import forgot from './pages/esqueceu-senha';
-import register from './pages/registrar';
+import Login from './pages/Login';
+import ForgotPassword from './pages/ForgotPassword';
+import Register from './pages/Register';
 
 export default createAppContainer(
   createSwitchNavigator({
+    Register,
+    ForgotPassword,
+    Login,
     Welcome,
-    forgot,
-    register,
-    login,
+
+
+
   })
 );
