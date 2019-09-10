@@ -2,11 +2,11 @@ import React from 'react';
 
 import { View, Text, TouchableOpacity, Image } from 'react-native';
 
-import Logo from './assets/ararararaCOLOR-1.png';
+import Logo from '../../assets/ararararaCOLOR-1.png';
 
-import styles, { Colors } from './styles';
+import styles from './styles';
 
-const Inicio = ({ navigation }) => (
+const Welcome = ({ navigation }) => (
   <View style={styles.container}>
     <Image style={styles.logo} source={Logo} />
 
@@ -22,4 +22,4 @@ const Inicio = ({ navigation }) => (
   </View>
 );
 
-export default Inicio;
+export default Welcome;
