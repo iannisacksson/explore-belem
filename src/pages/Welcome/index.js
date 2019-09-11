@@ -2,7 +2,7 @@ import React from 'react';
 
 import { View, Text, TouchableOpacity, Image } from 'react-native';
 
-import Logo from '../../assets/ararararaCOLOR-1.png';
+import Logo from '../../assets/logo.png';
 
 import styles from './styles';
 

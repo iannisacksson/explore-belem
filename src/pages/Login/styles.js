@@ -21,16 +21,7 @@ const styles = StyleSheet.create({
     height: 100,
   },
 
-  design: {
-
-    height: 67,
-    backgroundColor: colors.primary,
-    borderBottomLeftRadius: 200,
-    borderBottomRightRadius: 200,
-  },
-
   containerBody: {
-    flex: 1,
     marginHorizontal: 20,
     marginTop: 53,
   },
@@ -66,8 +57,13 @@ const styles = StyleSheet.create({
     color: colors.white,
   },
 
+  footer: {
+    flex: 1,
+    justifyContent: 'space-between',
+  },
+
   forgot: {
-    fontSize: 13,
+    fontSize: 15,
     color: '#78D1e5',
     textAlign: 'center',
     fontWeight: '600',
@@ -81,8 +77,9 @@ const styles = StyleSheet.create({
   },
 
   linkRegister: {
-    fontSize: 13,
+    fontSize: 15,
     color: '#78D1e5',
+    marginBottom: 30,
   }
 })
 

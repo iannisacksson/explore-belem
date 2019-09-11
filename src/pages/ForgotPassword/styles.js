@@ -21,13 +21,6 @@ const styles = StyleSheet.create({
     height: 100,
   },
 
-  design: {
-    height: 67,
-    backgroundColor: colors.primary,
-    borderBottomLeftRadius: 200,
-    borderBottomRightRadius: 200,
-  },
-
   containerBody: {
     flex: 1,
     marginHorizontal: 20,
@@ -46,16 +39,17 @@ const styles = StyleSheet.create({
     fontSize: 20,
     marginTop: 17,
     paddingLeft: 17,
+    paddingVertical: 8,
   },
 
   containerButton: {
     alignItems: 'flex-end',
-    marginTop: 17,
+    marginTop: 18,
   },
 
   button: {
     backgroundColor: colors.primary,
-    paddingHorizontal: 30,
+    paddingHorizontal: 35,
     paddingVertical: metrics.basePaddingButton,
     borderRadius: metrics.baseRadius,
   },
@@ -65,24 +59,6 @@ const styles = StyleSheet.create({
     color: colors.white,
   },
 
-  forgot: {
-    fontSize: 13,
-    color: '#78D1e5',
-    textAlign: 'center',
-    fontWeight: '600',
-    marginTop: 10,
-  },
-
-  containerRegister: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    marginTop: 50,
-  },
-
-  linkRegister: {
-    fontSize: 13,
-    color: '#78D1e5',
-  },
 });
 
 export default styles;
