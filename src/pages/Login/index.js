@@ -11,7 +11,7 @@ import {
 
 import styles from './styles';
 
-import Logo from '../../assets/ararararaCOLOR-1.png';
+import Logo from '../../assets/logo.png';
 
 import { colors } from '../../styles/index';
 
@@ -56,7 +56,6 @@ const Login = () => (
         <Text style={styles.linkRegister}> Registre-se</Text>
       </View>
     </View>
-
   </View>
 );
 

@@ -9,7 +9,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import Logo from '../../assets/ararararaCOLOR-1.png';
+import Logo from '../../assets/logo.png';
 
 import styles from './styles';
 import { colors } from '../../styles';
