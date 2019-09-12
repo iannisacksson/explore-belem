@@ -5,14 +5,17 @@ import ForgotPassword from './pages/ForgotPassword';
 import Register from './pages/Register';
 import Home from './pages/Home';
 import ProfilePlace from './pages/ProfilePlace';
+import Favorites from './pages/Favorites';
 
 export default createAppContainer(
   createSwitchNavigator({
     Welcome,
+    Home,
     ProfilePlace,
+    Favorites,
     Register,
     Login,
-    Home,
+
     ForgotPassword,
   })
 );

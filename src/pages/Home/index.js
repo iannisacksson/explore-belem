@@ -1,6 +1,13 @@
 import React from 'react';
 
-import { View, Text, Image, TextInput, ScrollView } from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  TextInput,
+  ScrollView,
+  TouchableOpacity,
+} from 'react-native';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -13,7 +20,7 @@ import TabBar from '../../components/TabBar';
 import styles from './styles';
 import { colors } from '../../styles';
 
-const Home = () => (
+const Home = ({ navigation }) => (
   <>
     <View style={styles.container}>
       <View style={styles.header}>
@@ -43,7 +50,9 @@ const Home = () => (
           showsVerticalScrollIndicator={false}
         >
           <TopPlace />
-
+          <TouchableOpacity onPress={() => navigation.navigate('ProfilePlace')}>
+            <Text />
+          </TouchableOpacity>
           <PlacesCategory />
         </ScrollView>
       </ScrollView>

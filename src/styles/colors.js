@@ -12,6 +12,7 @@ export default {
   darkTransparent: 'rgba(0,0,0,0.6)',
   whiteTransparent: 'rgba(255,255,255, 0.5)',
 
+  content: '#A2A2A2',
   input: '#E8E8E8',
   fontInput: '#333333',
 };

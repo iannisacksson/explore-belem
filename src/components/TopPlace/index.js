@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { View, Text, ScrollView, Image } from 'react-native';
+import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native';
 
 import TitleSection from '../TitleSection';
 
@@ -10,7 +10,7 @@ import Mosqueiro from '../../assets/image/mosqueiro.png';
 
 import styles from './styles';
 
-const TopPlace = () => (
+const TopPlace = ({ navigation }) => (
   <View>
     <TitleSection title="Populares na cidade" />
 
@@ -25,9 +25,11 @@ const TopPlace = () => (
         <Text style={styles.nameCity}>Belém</Text>
       </View>
       <View style={styles.componentView}>
-        <Image style={styles.imageView} source={Cutijuba} />
-        <Text style={styles.namePlace}>Cotijuba</Text>
-        <Text style={styles.nameCity}>Belém</Text>
+        <TouchableOpacity>
+          <Image style={styles.imageView} source={Cutijuba} />
+          <Text style={styles.namePlace}>Cotijuba</Text>
+          <Text style={styles.nameCity}>Belém</Text>
+        </TouchableOpacity>
       </View>
       <View style={styles.componentView}>
         <Image style={styles.imageView} source={Mosqueiro} />
