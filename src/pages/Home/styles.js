@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { colors, metrics, fonts } from '../../styles/index';
+import { colors, metrics } from '../../styles/index';
 
 const styles = StyleSheet.create({
   container: {
@@ -68,62 +68,12 @@ const styles = StyleSheet.create({
   },
 
   contentView: {
-    marginTop: 20,
+    marginTop: metrics.basePadding,
   },
-  contentInfo: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  textContainer: {
-    fontSize: 25,
-    fontWeight: '700',
-    color: colors.dark,
-  },
-  textContainer2: {
-    fontSize: fonts.regular,
-    fontWeight: '300',
-    color: colors.darkTransparent,
-    marginTop: 8,
-  },
-  scroll: {
-    paddingLeft: 1,
-    paddingRight: 20,
-  },
-  componentView: {
-    flex: 1,
-    paddingHorizontal: 6,
-  },
-  imageView: {
-    width: 140,
-    height: 280,
-    borderRadius: 1,
-  },
-  imageView2: {
-    width: 200,
-    height: 100,
-    borderRadius: 2,
-  },
-  titleIlha: {
-    fontSize: fonts.input,
-    fontWeight: '700',
-    color: colors.dark,
-  },
-  subText: {
-    fontSize: fonts.medium,
-    fontWeight: '300',
-    color: colors.darkTransparent,
-  },
+
   viewCultura: {
     marginTop: 20,
   },
-  tab:{
-    backgroundColor: colors.white,
-    height: 40,
-    paddingHorizontal: 15,
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center'
-  }
 });
 
 export default styles;
