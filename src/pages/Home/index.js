@@ -46,10 +46,10 @@ const Home = () => (
       contentContainerStyle={styles.contentView}
       showsVerticalScrollIndicator={false}
     >
-      <View style={styles.contentInfo}>
-        <Text style={styles.textContainer}>Populares na cidade</Text>
+      <View style={styles.containerInfo}>
+        <Text style={styles.titleAbaTop}>Populares na cidade</Text>
         <TouchableOpacity>
-          <Text style={styles.textContainer2}>Ver Tudo</Text>
+          <Text style={styles.textLink}>Ver Tudo</Text>
         </TouchableOpacity>
       </View>
       <ScrollView
@@ -59,45 +59,44 @@ const Home = () => (
       >
         <View style={styles.componentView}>
           <Image style={styles.imageView} source={Combu} />
-          <Text style={styles.titleIlha}>Combu</Text>
-          <Text style={styles.subText}>Belém</Text>
+          <Text style={styles.namePlace}>Combu</Text>
+          <Text style={styles.nameCity}>Belém</Text>
         </View>
         <View style={styles.componentView}>
           <Image style={styles.imageView} source={Cutijuba} />
-          <Text style={styles.titleIlha}>Cotijuba</Text>
-          <Text style={styles.subText}>Belém</Text>
+          <Text style={styles.namePlace}>Cotijuba</Text>
+          <Text style={styles.nameCity}>Belém</Text>
         </View>
         <View style={styles.componentView}>
           <Image style={styles.imageView} source={Mosqueiro} />
-          <Text style={styles.titleIlha}>Mosqueiro</Text>
-          <Text style={styles.subText}>Belém</Text>
+          <Text style={styles.namePlace}>Mosqueiro</Text>
+          <Text style={styles.nameCity}>Belém</Text>
         </View>
       </ScrollView>
       <View style={styles.viewCultura}>
-        <View style={styles.contentInfo}>
-          <Text style={styles.textContainer}>Eventos Culturais</Text>
+        <View style={styles.containerInfo}>
+          <Text style={styles.titleAbaTop}>Eventos Culturais</Text>
           <TouchableOpacity>
-            <Text style={styles.textContainer2}>Ver Tudo</Text>
+            <Text style={styles.textLink}>Ver Tudo</Text>
           </TouchableOpacity>
         </View>
         <ScrollView
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={styles.scroll}
-          horizontal
         >
           <View style={styles.componentView}>
             <Image style={styles.imageView2} source={FeiraDoLivro} />
-            <Text style={styles.titleIlha}>Feira Do Livro</Text>
-            <Text style={styles.subText}>Belém</Text>
+            <Text style={styles.namePlace}>Feira Do Livro</Text>
+            <Text style={styles.nameCity}>Belém</Text>
           </View>
         </ScrollView>
       </View>
     </ScrollView>
     <View style={styles.tab}>
-        <Icon style={styles.icon} name="home" />
-        <Icon style={styles.icon} name="heart" />
-        <Icon style={styles.icon} name="bell" />
-        <Icon style={styles.icon} name="user" />
+      <Icon style={styles.iconBottom} name="home" />
+      <Icon style={styles.iconBottom} name="heart" />
+      <Icon style={styles.iconBottom} name="bell" />
+      <Icon style={styles.iconBottom} name="user" />
     </View>
   </View>
 );

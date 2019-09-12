@@ -12,4 +12,5 @@ export default {
   basePaddingButton: 10,
   baseHeight: 124,
   baseRadiusLogo: 100,
+  baseRadiusImage: 6,
 };

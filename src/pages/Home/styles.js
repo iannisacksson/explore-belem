@@ -68,27 +68,25 @@ const styles = StyleSheet.create({
   },
 
   contentView: {
-    marginTop: 20,
+    marginTop: metrics.basePadding,
   },
-  contentInfo: {
+  containerInfo: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingBottom: metrics.basePadding / 2,
   },
-  textContainer: {
-    fontSize: 25,
+  titleAbaTop: {
+    fontSize: 22,
     fontWeight: '700',
     color: colors.dark,
   },
-  textContainer2: {
+  textLink: {
     fontSize: fonts.regular,
     fontWeight: '300',
-    color: colors.darkTransparent,
-    marginTop: 8,
+    color: colors.lighter,
   },
-  scroll: {
-    paddingLeft: 1,
-    paddingRight: 20,
-  },
+  scroll: {},
   componentView: {
     flex: 1,
     paddingHorizontal: 6,
@@ -96,34 +94,39 @@ const styles = StyleSheet.create({
   imageView: {
     width: 140,
     height: 280,
-    borderRadius: 1,
+    borderRadius: metrics.baseRadiusImage,
   },
   imageView2: {
     width: 200,
     height: 100,
     borderRadius: 2,
   },
-  titleIlha: {
+  namePlace: {
     fontSize: fonts.input,
     fontWeight: '700',
     color: colors.dark,
+    paddingTop: metrics.basePadding / 2,
   },
-  subText: {
+  nameCity: {
     fontSize: fonts.medium,
     fontWeight: '300',
-    color: colors.darkTransparent,
+    color: colors.light,
   },
   viewCultura: {
     marginTop: 20,
   },
-  tab:{
+  tab: {
     backgroundColor: colors.white,
-    height: 40,
+    height: 41,
     paddingHorizontal: 15,
     flexDirection: 'row',
     justifyContent: 'space-around',
-    alignItems: 'center'
-  }
+    alignItems: 'center',
+  },
+  iconBottom: {
+    fontSize: 26,
+    color: colors.dark,
+  },
 });
 
 export default styles;
