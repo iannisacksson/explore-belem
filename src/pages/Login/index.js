@@ -15,7 +15,7 @@ import Logo from '../../assets/logo.png';
 
 import { colors } from '../../styles/index';
 
-const Login = () => (
+const Login = ({ navigation }) => (
   <View style={styles.container}>
     <View style={styles.containerLogo}>
       <Image style={styles.logo} source={Logo} />
@@ -42,18 +42,24 @@ const Login = () => (
       />
 
       <View style={styles.containerButton}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigation.navigate('Home')}
+        >
           <Text style={styles.buttonText}>Entrar</Text>
         </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>
 
     <View style={styles.footer}>
-      <Text style={styles.forgot}>Esqueceu sua senha?</Text>
-
+      <TouchableOpacity onPress={() => navigation.navigate('ForgotPassword')}>
+        <Text style={styles.forgot}>Esqueceu sua senha?</Text>
+      </TouchableOpacity>
       <View style={styles.containerRegister}>
         <Text style={styles.textAccount}>Não tem uma conta?</Text>
-        <Text style={styles.linkRegister}> Registre-se</Text>
+        <TouchableOpacity onPress={() => navigation.navigate('ForgotPassword')}>
+          <Text style={styles.linkRegister}> Registre-se</Text>
+        </TouchableOpacity>
       </View>
     </View>
   </View>

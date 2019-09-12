@@ -14,7 +14,7 @@ import Logo from '../../assets/logo.png';
 import styles from './styles';
 import { colors } from '../../styles';
 
-const ForgotPassword = () => (
+const ForgotPassword = ({ navigation }) => (
   <View style={styles.container}>
     <View style={styles.containerLogo}>
       <Image style={styles.logo} source={Logo} />
@@ -34,7 +34,10 @@ const ForgotPassword = () => (
       />
 
       <View style={styles.containerButton}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigation.navigate('Login')}
+        >
           <Text style={styles.buttonText}>Enviar</Text>
         </TouchableOpacity>
       </View>

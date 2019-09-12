@@ -8,11 +8,11 @@ import ProfilePlace from './pages/ProfilePlace';
 
 export default createAppContainer(
   createSwitchNavigator({
-    ProfilePlace,
-    Home,
-    Register,
-    ForgotPassword,
-    Login,
     Welcome,
+    ProfilePlace,
+    Register,
+    Login,
+    Home,
+    ForgotPassword,
   })
 );

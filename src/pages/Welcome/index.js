@@ -12,11 +12,14 @@ const Welcome = ({ navigation }) => (
 
     <TouchableOpacity
       style={styles.button}
-      onPress={() => navigation.navigate('login')}
+      onPress={() => navigation.navigate('Login')}
     >
       <Text style={styles.buttonText}>Entrar</Text>
     </TouchableOpacity>
-    <TouchableOpacity style={styles.button}>
+    <TouchableOpacity
+      style={styles.button}
+      onPress={() => navigation.navigate('Register')}
+    >
       <Text style={styles.buttonText}>Criar Conta</Text>
     </TouchableOpacity>
   </View>

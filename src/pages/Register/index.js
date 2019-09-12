@@ -15,7 +15,7 @@ import Logo from '../../assets/logo.png';
 
 import { colors } from '../../styles/index';
 
-const Register = () => (
+const Register = ({ navigation }) => (
   <View style={styles.container}>
     <View style={styles.containerLogo}>
       <Image style={styles.logo} source={Logo} />
@@ -52,7 +52,10 @@ const Register = () => (
 
       <View>
         <View style={styles.containerButton}>
-          <TouchableOpacity style={styles.button}>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => navigation.navigate('Login')}
+          >
             <Text style={styles.buttonText}>Registrar</Text>
           </TouchableOpacity>
         </View>
