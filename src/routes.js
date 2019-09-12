@@ -4,9 +4,11 @@ import Login from './pages/Login';
 import ForgotPassword from './pages/ForgotPassword';
 import Register from './pages/Register';
 import Home from './pages/Home';
+import ProfilePlace from './pages/ProfilePlace';
 
 export default createAppContainer(
   createSwitchNavigator({
+    ProfilePlace,
     Home,
     Register,
     ForgotPassword,

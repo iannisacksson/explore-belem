@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { colors, metrics, fonts } from '../../styles/index';
+import { colors, metrics } from '../../styles/index';
 
 const styles = StyleSheet.create({
   container: {
@@ -70,62 +70,9 @@ const styles = StyleSheet.create({
   contentView: {
     marginTop: metrics.basePadding,
   },
-  containerInfo: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingBottom: metrics.basePadding / 2,
-  },
-  titleAbaTop: {
-    fontSize: 22,
-    fontWeight: '700',
-    color: colors.dark,
-  },
-  textLink: {
-    fontSize: fonts.regular,
-    fontWeight: '300',
-    color: colors.lighter,
-  },
-  scroll: {},
-  componentView: {
-    flex: 1,
-    paddingHorizontal: 6,
-  },
-  imageView: {
-    width: 140,
-    height: 280,
-    borderRadius: metrics.baseRadiusImage,
-  },
-  imageView2: {
-    width: 200,
-    height: 100,
-    borderRadius: 2,
-  },
-  namePlace: {
-    fontSize: fonts.input,
-    fontWeight: '700',
-    color: colors.dark,
-    paddingTop: metrics.basePadding / 2,
-  },
-  nameCity: {
-    fontSize: fonts.medium,
-    fontWeight: '300',
-    color: colors.light,
-  },
+
   viewCultura: {
     marginTop: 20,
-  },
-  tab: {
-    backgroundColor: colors.white,
-    height: 41,
-    paddingHorizontal: 15,
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-  },
-  iconBottom: {
-    fontSize: 26,
-    color: colors.dark,
   },
 });
 
