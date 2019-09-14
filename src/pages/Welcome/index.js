@@ -2,6 +2,8 @@ import React from 'react';
 
 import { View, Text, TouchableOpacity, Image } from 'react-native';
 
+import PropTypes from 'prop-types';
+
 import Logo from '../../assets/logo.png';
 
 import styles from './styles';
@@ -24,5 +26,11 @@ const Welcome = ({ navigation }) => (
     </TouchableOpacity>
   </View>
 );
+
+Welcome.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func,
+  }).isRequired,
+};
 
 export default Welcome;

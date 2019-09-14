@@ -9,6 +9,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+import PropTypes from 'prop-types';
+
 import styles from './styles';
 
 import Logo from '../../assets/logo.png';
@@ -64,5 +66,11 @@ const Login = ({ navigation }) => (
     </View>
   </View>
 );
+
+Login.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func,
+  }).isRequired,
+};
 
 export default Login;
