@@ -1,5 +1,7 @@
 import React from 'react';
 
+import PropTypes from 'prop-types';
+
 import {
   View,
   Text,
@@ -11,9 +13,9 @@ import {
 
 import styles from './styles';
 
-import Logo from '../../assets/logo.png';
+import Logo from '~/assets/logo.png';
 
-import { colors } from '../../styles/index';
+import { colors } from '~/styles/index';
 
 const Register = ({ navigation }) => (
   <View style={styles.container}>
@@ -63,5 +65,11 @@ const Register = ({ navigation }) => (
     </KeyboardAvoidingView>
   </View>
 );
+
+Register.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func,
+  }).isRequired,
+};
 
 export default Register;

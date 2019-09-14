@@ -1,5 +1,7 @@
 import React from 'react';
 
+import PropTypes from 'prop-types';
+
 import {
   View,
   Text,
@@ -11,14 +13,14 @@ import {
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-import Logo from '../../assets/logo.png';
+import Logo from '~/assets/logo.png';
 
-import TopPlace from '../../components/TopPlace';
-import PlacesCategory from '../../components/PlacesCategory';
-import TabBar from '../../components/TabBar';
+import TopPlace from '~/components/TopPlace';
+import PlacesCategory from '~/components/PlacesCategory';
+import TabBar from '~/components/TabBar';
 
 import styles from './styles';
-import { colors } from '../../styles';
+import { colors } from '~/styles';
 
 const Home = ({ navigation }) => (
   <>
@@ -61,5 +63,11 @@ const Home = ({ navigation }) => (
     <TabBar />
   </>
 );
+
+Home.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func,
+  }).isRequired,
+};
 
 export default Home;

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import PropTypes from 'prop-types';
+
 import {
   View,
   Text,
@@ -9,10 +11,10 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import Logo from '../../assets/logo.png';
+import Logo from '~/assets/logo.png';
 
 import styles from './styles';
-import { colors } from '../../styles';
+import { colors } from '~/styles';
 
 const ForgotPassword = ({ navigation }) => (
   <View style={styles.container}>
@@ -44,5 +46,11 @@ const ForgotPassword = ({ navigation }) => (
     </KeyboardAvoidingView>
   </View>
 );
+
+ForgotPassword.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func,
+  }).isRequired,
+};
 
 export default ForgotPassword;

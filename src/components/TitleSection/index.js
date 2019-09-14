@@ -1,5 +1,7 @@
 import React from 'react';
 
+import PropTypes from 'prop-types';
+
 import { View, Text, TouchableOpacity } from 'react-native';
 
 import styles from './styles';
@@ -12,5 +14,9 @@ const TitleSection = ({ title }) => (
     </TouchableOpacity>
   </View>
 );
+
+TitleSection.propTypes = {
+  title: PropTypes.string.isRequired,
+};
 
 export default TitleSection;

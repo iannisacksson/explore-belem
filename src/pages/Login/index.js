@@ -1,5 +1,7 @@
 import React from 'react';
 
+import PropTypes from 'prop-types';
+
 import {
   View,
   Text,
@@ -9,13 +11,11 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-import PropTypes from 'prop-types';
-
 import styles from './styles';
 
-import Logo from '../../assets/logo.png';
+import Logo from '~/assets/logo.png';
 
-import { colors } from '../../styles/index';
+import { colors } from '~/styles/index';
 
 const Login = ({ navigation }) => (
   <View style={styles.container}>

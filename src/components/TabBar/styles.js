@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { colors } from '../../styles/index';
+import { colors } from '~/styles';
 
 const styles = StyleSheet.create({
   tab: {

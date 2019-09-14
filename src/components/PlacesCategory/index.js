@@ -2,9 +2,9 @@ import React from 'react';
 
 import { View, ScrollView, Image, Text } from 'react-native';
 
-import TitleSection from '../TitleSection';
+import TitleSection from '~/components/TitleSection';
 
-import FeiraDoLivro from '../../assets/image/feiradolivro.png';
+import FeiraDoLivro from '~/assets/image/feiradolivro.png';
 
 import styles from './styles';
 

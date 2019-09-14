@@ -2,10 +2,10 @@ import React from 'react';
 
 import { View, Text, Image } from 'react-native';
 
-import TitleSecundary from '../../components/TitleSecundary';
-import TabBar from '../../components/TabBar';
+import TitleSecundary from '~/components/TitleSecundary';
+import TabBar from '~/components/TabBar';
 
-import Igara from '../../assets/image/igara.png';
+import Igara from '~/assets/image/igara.png';
 
 import styles from './styles';
 

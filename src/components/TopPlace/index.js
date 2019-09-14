@@ -2,15 +2,15 @@ import React from 'react';
 
 import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native';
 
-import TitleSection from '../TitleSection';
+import TitleSection from '~/components/TitleSection';
 
-import Combu from '../../assets/image/combu.png';
-import Cutijuba from '../../assets/image/cutijuba.png';
-import Mosqueiro from '../../assets/image/mosqueiro.png';
+import Combu from '~/assets/image/combu.png';
+import Cutijuba from '~/assets/image/cutijuba.png';
+import Mosqueiro from '~/assets/image/mosqueiro.png';
 
 import styles from './styles';
 
-const TopPlace = ({ navigation }) => (
+const TopPlace = () => (
   <View>
     <TitleSection title="Populares na cidade" />
 

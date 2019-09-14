@@ -4,7 +4,7 @@ import { View, Text, TouchableOpacity, Image } from 'react-native';
 
 import PropTypes from 'prop-types';
 
-import Logo from '../../assets/logo.png';
+import Logo from '~/assets/logo.png';
 
 import styles from './styles';
 

@@ -4,10 +4,10 @@ import { View, Text, Image, TouchableOpacity } from 'react-native';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-import TitleSecundary from '../../components/TitleSecundary';
-import TabBar from '../../components/TabBar';
+import TitleSecundary from '~/components/TitleSecundary';
+import TabBar from '~/components/TabBar';
 
-import Igara from '../../assets/image/igara.png';
+import Igara from '~/assets/image/igara.png';
 
 import styles from './styles';
 
