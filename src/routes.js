@@ -1,8 +1,9 @@
-import { createAppContainer } from 'react-navigation';
+import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 
 import Welcome from './pages/Welcome';
-import Login from './pages/Login';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
 import ForgotPassword from './pages/ForgotPassword';
 import Register from './pages/Register';
 import Home from './pages/Home';
@@ -10,10 +11,14 @@ import ProfilePlace from './pages/ProfilePlace';
 import Favorites from './pages/Favorites';
 
 export default createAppContainer(
+  createSwitchNavigator({
+    SignIn,
+    SignUp,
+  }),
   createStackNavigator(
     {
       Welcome: { screen: Welcome },
-      Login: { screen: Login },
+      SignIn: { screen: SignIn },
       ForgotPassword: { screen: ForgotPassword },
       Register: { screen: Register },
       Favorites: { screen: Favorites },
@@ -22,7 +27,7 @@ export default createAppContainer(
     },
     {
       headerMode: 'none',
-      initialRouteName: 'Welcome',
+      initialRouteName: 'SignIn',
     }
   )
 );

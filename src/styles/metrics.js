@@ -9,7 +9,7 @@ export default {
   screenWidth: width < height ? width : height,
   screenHeight: width < height ? height : width,
 
-  basePaddingButton: 10,
+  basePaddingButton: 15,
   baseHeight: 124,
   baseRadiusLogo: 100,
   baseRadiusImage: 6,

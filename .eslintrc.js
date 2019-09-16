@@ -1,6 +1,8 @@
 module.exports = {
   "env": {
-      "es6": true
+      "es6": true,
+      jest: true,
+      browser: true
   },
   "extends": [
       "airbnb",
@@ -20,14 +22,22 @@ module.exports = {
       "ecmaVersion": 2018,
       "sourceType": "module"
   },
-  "plugins": [
-      "react",
-      'prettier'
-  ],
+  plugins: ["react", "jsx-a11y", "import", "react-hooks", "prettier"],
   "rules": {
+<<<<<<< HEAD
     "prettier/prettier": "error",
     "react/jsx-filename-extension": ["error", { extensions: [".js", ".jsx"] }],
     "import/prefer-default-export": "off",
+=======
+    'prettier/prettier': 'error',
+    'react/jsx-filename-extension': [
+      'error',
+      {
+        "extensions": ['.jsx', '.js']
+      }
+    ],
+    'import/prefer-default-export': 'off',
+>>>>>>> components
     "no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
     "react/jsx-one-expression-per-line": "off",
     "global-require": "off",
